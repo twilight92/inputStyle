@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF_8">
+	<title>input style</title>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/font_nanum/1.0/nanumbarungothic/nanumbarungothic.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/input.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="section_wrap">
+			<section>
+				<h1>[ 라디오 ]</h1>
+				<div>
+					<h2>라디오_1</h2>
+					<ul>
+						<li>
+							<input type="radio" id="ex_02_1599" name="q_sub_6014" value="1599" />
+		                    <label for="ex_02_1599">매우 만족</label>
+		                </li>
+						<li>
+							<input type="radio" id="ex_02_1600" name="q_sub_6014" value="1600" />
+							<label for="ex_02_1600">만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_1601" name="q_sub_6014" value="1601" />
+							<label for="ex_02_1601">조금 만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_1602" name="q_sub_6014" value="1602" />
+							<label for="ex_02_1602">조금 불만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_1603" name="q_sub_6014" value="1603" />
+							<label for="ex_02_1603">불만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_1604" name="q_sub_6014" value="1604" />
+							<label for="ex_02_1604">매우 불만족</label>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2>라디오_2(checked)</h2>
+					<ul>
+						<li>
+							<input type="radio" id="ex_02_159991" name="q_sub_6015" value="1599" checked/>
+		                    <label for="ex_02_159991">매우 만족</label>
+		                </li>
+						<li>
+							<input type="radio" id="ex_02_160092" name="q_sub_6015" value="1600" />
+							<label for="ex_02_160092">만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_160193" name="q_sub_6015" value="1601" />
+							<label for="ex_02_160193">조금 만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_160294" name="q_sub_6015" value="1602" />
+							<label for="ex_02_160294">조금 불만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_160395" name="q_sub_6015" value="1603" />
+							<label for="ex_02_160395">불만족</label>
+						</li>
+						<li>
+							<input type="radio" id="ex_02_160496" name="q_sub_6015" value="1604" />
+							<label for="ex_02_160496">매우 불만족</label>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+			<section>
+				<h1>[ 체크박스 ]</h1>
+				<div class="unnecessary">
+					<h2>체크박스_1(checked)</h2>
+					<ul>
+						<li><input type="checkbox" name="ag_type_1" id="ag_type_1" checked><label for="ag_type_1">체크 1</label></li>
+						<li><input type="checkbox" name="ag_type_1" id="ag_type_2"><label for="ag_type_2">체크 2</label></li>
+						<li><input type="checkbox" name="ag_type_1" id="ag_type_3"><label for="ag_type_3">체크 3</label></li>
+						<li><input type="checkbox" name="ag_type_1" id="ag_type_4"><label for="ag_type_4">체크 4</label></li>
+						<li><input type="checkbox" name="ag_type_1" id="ag_type_5"><label for="ag_type_5">체크 5</label></li>
+					</ul>
+					<p class="all_chk_box"><input type="checkbox" name="ag_type_1" id="ag_type_6" class="all_chk"><label for="ag_type_6">전체선택</p>
+				</div>
+				<div class="type_check option">
+					<h2>체크박스_2(선택/필수)</h2>
+					<ul>
+						<li><input type="checkbox" name="ag_type_2" id="ag_type_7" class="chk_necessary"><label for="ag_type_7">체크 1</label></li>
+						<li><input type="checkbox" name="ag_type_2" id="ag_type_8" class="chk_necessary"><label for="ag_type_8">체크 2</label></li>
+						<li><input type="checkbox" name="ag_type_2" id="ag_type_9" class="chk_necessary"><label for="ag_type_9">체크 3</label></li>
+						<li><input type="checkbox" name="ag_type_2" id="ag_type_10"><label for="ag_type_10">체크 4</label></li>
+						<li><input type="checkbox" name="ag_type_2" id="ag_type_11"><label for="ag_type_11">체크 5</label></li>
+					</ul>
+					<p class="all_chk_box"><input type="checkbox" name="ag_type_2" id="ag_type_12" class="all_chk"><label for="ag_type_12">전체선택</p>
+				</div>
+
+			</section>
+			<section class="type_text">
+				<h1>[ 텍스트(공백X) ]</h1>
+				<div>
+					<h2>숫자만</h2>
+					<input type="text" class="only_number">
+				</div>
+				<div>
+					<h2>이메일</h2>
+					<input type="text">
+				</div>
+			</section>
+		</div>
+	<div class="btn_wrap">
+		<input type="button" value="유효성 검증" class="btn_validation" data-click="success()">
+	</div>
+	</div>
+
+	<div class="result">
+		<span class="now">0</span>/<!--  -->
+		<span class="all"></span>
+		<span class="necessary"></span>
+	</div>
+
+	<script>
+		function success(){
+			alert('통과 !')
+		}
+	</script>
+</body>
+</html>
